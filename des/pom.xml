@@ -12,4 +12,26 @@
     <artifactId>des</artifactId>
 
 
+    <properties>
+        <RESOURCE_PATH>${project.basedir}/src/main/resources</RESOURCE_PATH>
+    </properties>
+
+    <build>
+        <resources>
+            <resource>
+                <directory>${RESOURCE_PATH}</directory>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
+    </build>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <version>5.3.1</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
 </project>
